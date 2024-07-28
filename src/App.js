@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="/myImage.png" className="App-image" alt="myImage" />
         <p>
-          Hey i am shilesh how can i help you ?.
+          Hey, I am Shilesh. How can I help you?
         </p>
-        
       </header>
     </div>
   );
