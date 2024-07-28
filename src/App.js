@@ -8,6 +8,16 @@ function App() {
         <p>
           Hey, I am Shilesh. How can I help you?
         </p>
+        <p>
+          <a href="mailto:mavchi1212@gmail.com" className="App-link">
+            📧 mavchi1212@gmail.com
+          </a>
+        </p>
+        <p>
+          <a href="tel:+1234567890" className="App-link">
+            📞 +1234567890
+          </a>
+        </p>
       </header>
     </div>
   );

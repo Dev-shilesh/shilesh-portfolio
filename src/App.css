@@ -38,3 +38,15 @@
     transform: rotate(360deg);
   }
 }
+
+/* Added CSS for email and phone links */
+.App-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+}
