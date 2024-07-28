@@ -10,7 +10,7 @@ function App() {
         </p>
         <p>
           <a href="mailto:mavchi1212@gmail.com" className="App-link">
-            📧 mavchi1212@gmail.com
+            📧 mailfd@gmail.com
           </a>
         </p>
         <p>
