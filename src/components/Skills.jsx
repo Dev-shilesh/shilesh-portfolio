@@ -5,7 +5,6 @@ const Skills = () => {
   const skills = [
     { name: 'HTML', img: 'Assets/skillsLogo/html.png' },
     { name: 'CSS', img: 'Assets/skillsLogo/css.png' },
-    { name: 'JavaScript', img: 'Assets/skillsLogo/javascript.png' },
     { name: 'Bootstrap', img: 'Assets/skillsLogo/bootstarp.png' },
     { name: 'React.js', img: 'Assets/skillsLogo/reactjs.png' },
     { name: 'Next.js', img: 'Assets/skillsLogo/nextjs.png' },
@@ -20,6 +19,8 @@ const Skills = () => {
     { name: 'Express.js', img: 'Assets/skillsLogo/ex.png' },
     { name: 'MySQL', img: 'Assets/skillsLogo/mysql.png' },
     { name: 'Postman', img: 'Assets/skillsLogo/postman.png' },
+    { name: 'JavaScript', img: 'Assets/skillsLogo/javascript.png' },
+
   ];
 
   return (
