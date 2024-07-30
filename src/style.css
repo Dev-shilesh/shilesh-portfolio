@@ -308,7 +308,6 @@ section {
   background-color: #ffaa00; /* Button background color on hover */
 }
 
-/* Skills Section Styles */
 .skills {
   background: #121212; /* Dark background for contrast */
   padding: 4rem 2rem;
@@ -357,6 +356,12 @@ section {
   transition: transform 0.3s; /* Smooth animation */
 }
 
+.skill-logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image fits within the container */
+}
+
 .skill-card:hover .skill-logo-container {
   transform: rotate(360deg); /* Rotate animation on hover */
 }
@@ -366,6 +371,7 @@ section {
   color: #eee; /* Light text color */
   margin-top: 0.5rem;
 }
+
 
 /* Contact Section Styles */
 .contact {
