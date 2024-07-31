@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 // import './Contact.css'; // Ensure to create and link the CSS file
 
 const Contact = () => {
+  const form = useRef();
+  const [responseMessage, setResponseMessage] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_k5cq6xx', 'template_7noqktg', form.current, 'e80MoB4OMFGauMnu9')
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.text);
+          setResponseMessage('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setResponseMessage('Failed to send message, please try again.');
+        }
+      );
+  };
+
   return (
     <section id="contact" className="contact">
       <h2>Contact Me</h2>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <i className="fas fa-user"></i>
-          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="text" name="user_name" placeholder="Your Name" required />
         </div>
         <div className="form-group">
           <i className="fas fa-envelope"></i>
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="email" name="user_email" placeholder="Your Email" required />
         </div>
         <div className="form-group">
           <i className="fas fa-comment"></i>
@@ -36,6 +57,7 @@ const Contact = () => {
           <i className="fab fa-github"></i>
         </a>
       </div>
+      {responseMessage && <p className="response-message">{responseMessage}</p>}
     </section>
   );
 };

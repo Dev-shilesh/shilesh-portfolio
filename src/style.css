@@ -13,75 +13,18 @@ body {
 }
 
 /* Header Styles */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: linear-gradient(90deg, #1f1f1f, #2c2c2c); /* Gradient background */
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.header .logo {
-  font-size: 1.8rem; /* Larger logo size */
+.header .navbar-brand {
+  font-size: 1.5em;
   font-weight: bold;
-  color: #00aaff; /* Accent color for the logo */
-  transition: transform 0.3s ease-in-out;
 }
 
-.header .logo:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+.header .nav-link {
+  font-size: 1em;
+  transition: color 0.3s;
 }
 
-.header nav ul {
-  display: flex;
-  gap: 1.5rem; /* Increased gap between nav items */
-}
-
-.header nav ul li {
-  list-style: none;
-}
-
-.header nav ul li a {
-  color: #ddd; /* Light text color */
-  text-decoration: none;
-  font-size: 1.1rem; /* Larger font size */
-  font-weight: 500; /* Medium font weight */
-  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-  padding: 0.5rem 0;
-  position: relative;
-}
-
-.header nav ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #00aaff; /* Accent color for underline */
-  transition: width 0.3s ease-in-out;
-}
-
-.header nav ul li a:hover {
-  color: #00aaff; /* Hover color */
-}
-
-.header nav ul li a:hover::after {
-  width: 100%; /* Full width underline on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .header nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
+.header .nav-link:hover {
+  color: #f39c12;
 }
 
 
