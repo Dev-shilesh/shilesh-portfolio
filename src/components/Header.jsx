@@ -1,13 +1,13 @@
 import React from 'react';
-// import './Header.css'; // Optionally include custom CSS for further styling
+// import './Header.cs.s'; // Ensure to create and link the CSS file
 
 const Header = () => {
   return (
     <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
         <div className="container">
           <a className="navbar-brand" href="#home">
-            Your Logo
+            <img src="/Assets/skillsLogo/logo2.png" alt="Shilesh Mavchi Logo" style={{ height: '40px' }} />
           </a>
           <button
             className="navbar-toggler"

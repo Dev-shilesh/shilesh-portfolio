@@ -13,19 +13,25 @@ body {
 }
 
 /* Header Styles */
-.header .navbar-brand {
-  font-size: 1.5em;
-  font-weight: bold;
+/* Header.css */
+.navbar-custom {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 4px 8px #00000084; /* Add this line for shadow */
 }
 
-.header .nav-link {
-  font-size: 1em;
-  transition: color 0.3s;
+.navbar-custom .nav-link {
+  color: white; /* Adjust the color as needed */
 }
 
-.header .nav-link:hover {
-  color: #f39c12;
+.navbar-custom .navbar-brand img {
+  height: 40px; /* Adjust the logo height as needed */
 }
+
+.navbar-custom .navbar-toggler-icon {
+  color: white; /* Adjust the color as needed */
+}
+
 
 
 /* Hero Section Styles */

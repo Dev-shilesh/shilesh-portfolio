@@ -44,17 +44,23 @@ const Contact = () => {
         </button>
       </form>
       <div className="social-icons">
-        <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/8766909365" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-whatsapp"></i>
         </a>
-        <a href="https://t.me/yourtelegramlink" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/Devshilesh" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-telegram-plane"></i>
         </a>
-        <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/shilesh_01?igsh=eHdxZDg3YWJjM3ow" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
         </a>
-        <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Dev-shilesh" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shileshmavchi" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin"></i>
+        </a>
+        <a href="https://leetcode.com/u/Shilesh_Mavchi" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-code"></i>
         </a>
       </div>
       {responseMessage && <p className="response-message">{responseMessage}</p>}
